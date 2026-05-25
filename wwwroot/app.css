@@ -135,31 +135,50 @@ body {
 
 /*paginas*/
 .pagina-historia {
-    max-width: 800px;
+    max-width: 1100px;
     margin: 40px auto;
-    background: white;
     padding: 30px;
+}
+
+    .pagina-historia h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #1d4ed8;
+    }
+
+.conteudo-historia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.bloco-historia {
+    background: white;
+    padding: 25px;
     border-radius: 16px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
-    .pagina-historia h1 {
+    .bloco-historia h2 {
         color: #1d4ed8;
-        margin-bottom: 20px;
-    }
-
-    .pagina-historia p {
-        line-height: 1.7;
         margin-bottom: 15px;
     }
 
-    .pagina-historia a {
-        display: inline-block;
-        margin-top: 10px;
-        text-decoration: none;
-        font-weight: bold;
-        color: #1d4ed8;
+    .bloco-historia p {
+        line-height: 1.7;
+        margin-bottom: 12px;
     }
+
+.botao-voltar {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background: #1d4ed8;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
 
 .pagina-curriculo,
 .pagina-contato {
